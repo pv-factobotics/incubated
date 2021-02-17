@@ -3,7 +3,7 @@
     "$id": "https://github.com/smart-data-models/incubated/tree/master/DIH2/HWFlexCell/GeneralConfig/schema.json",
     "type": "object",
     "title": "The general configuration schema",
-    "description": "The general configuration schema comprises variuos setting for the system.",
+    "description": "The general configuration schema comprises various setting for the system.",
     "required": [
         "id",
         "update_active",
@@ -16,7 +16,7 @@
         "id": {
             "$id": "#/properties/id",
             "type": "string",
-            "description": "OCB object ID."
+            "description": "Property. OCB object ID."
         },
         "update_active": {
             "$id": "#/properties/update_active",
@@ -60,7 +60,8 @@
         },
         "type": {
             "$id": "#/properties/type",
-            "type": "string"
+            "type": "string",
+            "description": "Property. Type of entity."
         }
     },
     "additionalProperties": true

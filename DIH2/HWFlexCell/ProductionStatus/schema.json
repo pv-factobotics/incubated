@@ -9,8 +9,7 @@
         "active",
         "product",
         "progress",
-        "paused",
-        "type"
+        "paused"
     ],
     "properties": {
         "id": {
@@ -41,10 +40,6 @@
             "type": "boolean",
             "description": "Property. Current production paused.",
             "default": false
-        },
-        "type": {
-            "$id": "#/properties/type",
-            "type": "string"
         }
     },
     "additionalProperties": true
