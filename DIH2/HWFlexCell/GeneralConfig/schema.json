@@ -21,19 +21,19 @@
         "update_active": {
             "$id": "#/properties/update_active",
             "type": "boolean",
-            "description": "Allow to update active object.",
+            "description": "Property. Allow to update active object.",
             "default": false
         },
         "step_mode": {
             "$id": "#/properties/step_mode",
             "type": "string",
-            "description": "Production to be done in steps.",
+            "description": "Property. Production to be done in steps.",
             "default": "OFF"
         },
         "available_tools": {
             "$id": "#/properties/available_tools",
             "type": "array",
-            "description": "Array of available tools.",
+            "description": "Property. Array of available tools.",
             "default": [],
             "additionalItems": true,
             "items": {
@@ -42,7 +42,7 @@
                     {
                         "$id": "#/properties/available_tools/items/anyOf/0",
                         "type": "string",
-                        "description": "Tool ID / name.",
+                        "description": "Property. Tool ID / name.",
                         "default": ""
                     }
                 ]
@@ -51,7 +51,7 @@
         "hexapods_ok": {
             "$id": "#/properties/hexapods_ok",
             "type": "array",
-            "description": "Array of checked / prepared hexapods that has correct tool and is in correct position.",
+            "description": "Property. Array of checked / prepared hexapods that has correct tool and is in correct position.",
             "default": [],
             "additionalItems": true,
             "items": {

@@ -13,17 +13,17 @@
         "id": {
             "$id": "#/properties/id",
             "type": "string",
-            "description": "OCB object ID."
+            "description": "Property. OCB object ID."
         },
         "error_code": {
             "$id": "#/properties/error_code",
             "type": "string",
-            "description": "String containing error code from sensor."
+            "description": "Property. String containing error code from sensor."
         },
         "error_message": {
             "$id": "#/properties/error_message",
             "type": "string",
-            "description": "String containing error message from sensor."
+            "description": "Property. String containing error message from sensor."
         }
     },
     "additionalProperties": true

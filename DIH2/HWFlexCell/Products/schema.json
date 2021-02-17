@@ -12,13 +12,13 @@
         "id": {
             "$id": "#/properties/id",
             "type": "string",
-            "description": "OCB object ID."
+            "description": "Property. OCB object ID."
         },
         "products": {
             "$id": "#/properties/products",
             "type": "array",
             "title": "The products schema",
-            "description": "Array of products templates.",
+            "description": "Property. Array of products templates.",
             "default": [],
             "additionalItems": true,
             "items": {
@@ -37,13 +37,13 @@
                             "product": {
                                 "$id": "#/properties/products/items/anyOf/0/properties/product",
                                 "type": "string",
-                                "description": "ID / Name of the product.",
+                                "description": "Property. ID / Name of the product.",
                                 "default": ""
                             },
                             "hexapods": {
                                 "$id": "#/properties/products/items/anyOf/0/properties/hexapods",
                                 "type": "array",
-                                "description": "Array of hexapods.",
+                                "description": "Property. Array of hexapods.",
                                 "default": [],
                                 "additionalItems": true,
                                 "items": {
@@ -64,31 +64,31 @@
                                                 "id": {
                                                     "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/id",
                                                     "type": "integer",
-                                                    "description": "Hexapod ID.",
+                                                    "description": "Property. Hexapod ID.",
                                                     "default": 0
                                                 },
                                                 "x": {
                                                     "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/x",
                                                     "type": "number",
-                                                    "description": "Hexapod x coordinate.",
+                                                    "description": "Property. Hexapod x coordinate.",
                                                     "default": 0.0
                                                 },
                                                 "y": {
                                                     "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/y",
                                                     "type": "number",
-                                                    "description": "Hexapod y coordinate.",
+                                                    "description": "Property. Hexapod y coordinate.",
                                                     "default": 0.0
                                                 },
                                                 "z": {
                                                     "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/z",
                                                     "type": "integer",
-                                                    "description": "Hexapod z coordinate.",
+                                                    "description": "Property. Hexapod z coordinate.",
                                                     "default": 0.0
                                                 },
                                                 "platform": {
                                                     "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/platform",
                                                     "type": "object",
-                                                    "description": "Hexapod platform (lower part) object",
+                                                    "description": "Property. Hexapod platform (lower part) object",
                                                     "required": [
                                                         "locked"
                                                     ],
@@ -105,7 +105,7 @@
                                                 "head": {
                                                     "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/head",
                                                     "type": "object",
-                                                    "description": "Hexapod head (upper part) object",
+                                                    "description": "Property. Hexapod head (upper part) object",
                                                     "required": [
                                                         "rx",
                                                         "ry",
@@ -117,7 +117,7 @@
                                                         "rx": {
                                                             "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/head/properties/rx",
                                                             "type": "integer",
-                                                            "description": "Hexapod head rotation angle.",
+                                                            "description": "Property. Hexapod head rotation angle.",
                                                             "default": 0
                                                         },
                                                         "ry": {
@@ -129,19 +129,19 @@
                                                         "rz": {
                                                             "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/head/properties/rz",
                                                             "type": "integer",
-                                                            "description": "Hexapod head rotation angle.",
+                                                            "description": "Property. Hexapod head rotation angle.",
                                                             "default": 0
                                                         },
                                                         "locked": {
                                                             "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/head/properties/locked",
                                                             "type": "boolean",
-                                                            "description": "Shows if hexapod head was locked in place.",
+                                                            "description": "Property. Shows if hexapod head was locked in place.",
                                                             "default": false
                                                         },
                                                         "tool": {
                                                             "$id": "#/properties/products/items/anyOf/0/properties/hexapods/items/anyOf/0/properties/head/properties/tool",
                                                             "type": "string",
-                                                            "description": "Current tool of the hexapod.",
+                                                            "description": "Property. Current tool of the hexapod.",
                                                             "default": ""
                                                         }
                                                     },
@@ -156,14 +156,14 @@
                             "abb": {
                                 "$id": "#/properties/products/items/anyOf/0/properties/abb",
                                 "type": "object",
-                                "description": "Temporary object for robotic arm.",
+                                "description": "Property. Temporary object for robotic arm.",
                                 "required": [],
                                 "additionalProperties": true
                             },
                             "ur": {
                                 "$id": "#/properties/products/items/anyOf/0/properties/ur",
                                 "type": "object",
-                                "description": "Robotic arm object.",
+                                "description": "Property. Robotic arm object.",
                                 "required": [
                                     "estop",
                                     "active",
@@ -178,49 +178,49 @@
                                     "estop": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/estop",
                                         "type": "boolean",
-                                        "description": "Robotic arm emergency stop trigger",
+                                        "description": "Property. Robotic arm emergency stop trigger",
                                         "default": false
                                     },
                                     "active": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/active",
                                         "type": "boolean",
-                                        "description": "Robotic arm active (moving and online)",
+                                        "description": "Property. Robotic arm active (moving and online)",
                                         "default": false
                                     },
                                     "shoulder_link": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/shoulder_link",
                                         "type": "integer",
-                                        "description": "Robotic arm shoulder link angle",
+                                        "description": "Property. Robotic arm shoulder link angle",
                                         "default": 0
                                     },
                                     "upper_arm_link": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/upper_arm_link",
                                         "type": "integer",
-                                        "description": "Robotic arm upper arm link angle",
+                                        "description": "Property. Robotic arm upper arm link angle",
                                         "default": 0
                                     },
                                     "forearm_link": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/forearm_link",
                                         "type": "integer",
-                                        "description": "Robotic arm forearm link angle",
+                                        "description": "Property. Robotic arm forearm link angle",
                                         "default": 0
                                     },
                                     "wrist_1_link": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/wrist_1_link",
                                         "type": "integer",
-                                        "description": "Robotic arm wrist link angle",
+                                        "description": "Property. Robotic arm wrist link angle",
                                         "default": 0
                                     },
                                     "wrist_2_link": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/wrist_2_link",
                                         "type": "integer",
-                                        "description": "Robotic arm wrist link angle",
+                                        "description": "Property. Robotic arm wrist link angle",
                                         "default": 0
                                     },
                                     "wrist_3_link": {
                                         "$id": "#/properties/products/items/anyOf/0/properties/ur/properties/wrist_3_link",
                                         "type": "integer",
-                                        "description": "Robotic arm wrist link angle",
+                                        "description": "Property. Robotic arm wrist link angle",
                                         "default": 0
                                     }
                                 },

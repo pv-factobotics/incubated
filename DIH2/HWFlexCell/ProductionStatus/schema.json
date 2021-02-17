@@ -16,30 +16,30 @@
         "id": {
             "$id": "#/properties/id",
             "type": "string",
-            "description": "OCB object ID."
+            "description": "Property. OCB object ID."
         },
         "active": {
             "$id": "#/properties/active",
             "type": "boolean",
-            "description": "Production is in progress.",
+            "description": "Property. Production is in progress.",
             "default": false
         },
         "product": {
             "$id": "#/properties/product",
             "type": "string",
-            "description": "Current active production product.",
+            "description": "Property. Current active production product.",
             "default": ""
         },
         "progress": {
             "$id": "#/properties/progress",
             "type": "integer",
-            "description": "Progress of current active production.",
+            "description": "Property. Progress of current active production.",
             "default": 0
         },
         "paused": {
             "$id": "#/properties/paused",
             "type": "boolean",
-            "description": "Current production paused.",
+            "description": "Property. Current production paused.",
             "default": false
         },
         "type": {
